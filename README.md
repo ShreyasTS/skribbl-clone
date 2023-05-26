@@ -30,7 +30,7 @@ This is my first attempt to make a clone of an actual game.
 ##### To run the game server:
 `$ node server.js`
 
-Open the browser in [localhost:3000](http://localhost:3000 "localhost:3000") or the IP address and port after [port forwarding](https://en.wikipedia.org/wiki/Port_forwarding "port forwarding").
+The game will then be accessible at [localhost:3000](http://localhost:3000 "localhost:3000"). The default port is 3000, however this can be changed in the server code, or enter the server IP address and port after [port forwarding](https://en.wikipedia.org/wiki/Port_forwarding "port forwarding").
 
 ------------
 ###  For Game Admin:
