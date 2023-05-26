@@ -49,3 +49,5 @@ Use `//admin {admin-password} {command} {player-name}*(optional) {value}*(option
 If you are interested in this project, make sure to add it to your favorites or give a ⭐ to get the latest updates.
 I am open to improvements especially in the server code.
 Please feel free to clone this repository and modify or improve anything as you wish.
+Check out my other games 👉🏻 [here](https://shreyas-rao.itch.io/ "here")
+ 
