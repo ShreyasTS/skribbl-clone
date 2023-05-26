@@ -1,0 +1,409 @@
+.loginArea {
+    margin: auto;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border: 3px solid white;
+    border-radius: 10px;
+    width: 250px;
+    height: 200px;
+    background-color: #80d3fc;
+    text-align: center;
+    -webkit-box-shadow: 0px 5px 8px 4px #000000;
+    box-shadow: 0px 5px 8px 4px #000000;
+    z-index: 3;
+}
+
+#sendMsgBtn {
+    background-color: white;
+    font-weight: bold;
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 4px;
+
+}
+
+body {
+    background-image: url('/images/bg.png');
+    overflow: hidden;
+}
+
+#sendMsgBtn:hover {
+    color: white;
+    background-color: black;
+}
+
+#chatField {
+    border: 1px solid #000000;
+    border-radius: 3px;
+    margin: auto;
+    position: relative;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+#playerName {
+    border: 3px solid #277da8;
+    border-radius: 3px;
+    margin: auto;
+    position: relative;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+#startGame {
+    background-color: white;
+    font-weight: bold;
+    border: 3px solid red;
+    border-radius: 5px;
+    transition-duration: 0.4s;
+}
+
+#startGame:hover {
+    color: white;
+    background-color: red;
+}
+
+#randomName {
+    border: 3px solid black;
+    border-radius: 100px;
+    padding: 3px;
+    margin-top: 10px;
+    font-size: 130%;
+    transition-duration: 0.5s;
+}
+
+@keyframes rotation {
+    to {
+        transform: rotate(360deg);
+
+    }
+}
+
+#randomName:hover {
+    background-color: #000000;
+    animation: rotation 2s linear 0s infinite;
+
+
+}
+
+@keyframes wobble {
+    0% {
+        transform: translateX(0%);
+    }
+
+    15% {
+        transform: translateX(-10%);
+    }
+
+    30% {
+        transform: translateX(8%);
+    }
+
+    45% {
+        transform: translateX(-6%);
+    }
+
+    60% {
+        transform: translateX(5%);
+    }
+
+    75% {
+        transform: translateX(-3%);
+    }
+
+    100% {
+        transform: translateX(0%);
+    }
+}
+
+
+.winner {
+    animation-fill-mode: both;
+    animation-duration: 10s;
+    animation: wobble 1s linear 0s infinite;
+}
+
+#loginButton {
+    background-color: white;
+    font-weight: bold;
+    border: 3px solid red;
+    border-radius: 5px;
+    margin-left: 10px;
+    padding: 5px;
+    transition-duration: 0.4s;
+}
+
+#loginButton:hover {
+    color: white;
+    background-color: red;
+}
+
+.optBtn {
+    background-color: white;
+    font-weight: bold;
+    border: 3px solid black;
+    border-radius: 5px;
+    margin-left: 10px;
+    padding: 5px;
+    transition-duration: 0.4s;
+}
+
+.optBtn:hover {
+    color: white;
+    background-color: black;
+}
+
+.loginArea #opt1,
+#opt2,
+#opt3 {
+    padding-left: 20px;
+    padding-right: 20px;
+    margin: 15px;
+
+}
+
+#overlay {
+    position: fixed;
+    display: block;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 3;
+}
+
+#canvas {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    margin: auto;
+}
+
+
+
+.chat-container {
+    /*drawing color: #3975CE*/
+    position: relative;
+    left: 78%;
+    top: 20%;
+    background-color: white;
+    width: 225px;
+    height: 570px;
+    border: 1px solid #000000;
+    border-radius: 5px;
+    display: flex;
+    overflow-y: scroll;
+    flex-direction: column-reverse;
+    word-break: break-all;
+    overflow: hidden;
+}
+
+
+
+div.chat-container>div:nth-of-type(even) {
+    background-color: #ececec;
+}
+
+#wordcounter {
+    position: absolute;
+    display: inline-block;
+    margin: 4px;
+    right: 0;
+    bottom: 0;
+    box-sizing: inherit;
+    display: flex;
+}
+
+
+
+
+.chatInput {
+    display: inline-block;
+    top: 77.5%;
+    right: 6.7%;
+    height: auto;
+    width: 220px;
+    border: 1px solid black;
+    padding: 4px;
+    position: absolute;
+    background-color: lightblue;
+    border: 10px sold #000000;
+    border-radius: 5px;
+}
+
+.overallHolder {
+    width: 1500px;
+    height: 995px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+.voting {
+    position: relative;
+    bottom: 360px;
+    left: 1000px;
+    z-index: 2;
+}
+
+.voting>button>img {
+    opacity: 0.4;
+}
+
+.voting>button>img:hover {
+    opacity: 1;
+}
+
+.voting>button {
+    border: 0px;
+    background-color: white;
+}
+
+.chat-message {
+    font-family: fantasy;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 5px;
+    word-break: break-all;
+    border-bottom: 1px solid grey;
+}
+
+#playerList,
+th,
+td {
+    border: 2px solid black;
+}
+
+xmp,
+pre,
+code {
+    margin: 0;
+    padding: 0;
+    display: inline;
+}
+
+#player-container {
+    margin: auto;
+    position: absolute;
+    top: 20.5%;
+    left: 3%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: start;
+    align-items: center;
+    height: 580px;
+    width: 260px;
+    border: 1px solid black;
+    padding: 10px;
+    background-color: white;
+    border-radius: 5px;
+}
+
+.player-div {
+    width: 240px;
+    margin-bottom: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: lightblue;
+    border: 1px solid black;
+    border-radius: 10px;
+    height: 30px;
+}
+
+.player-name {
+    font-size: 130%;
+    text-align: left;
+    flex-grow: 1;
+    border-right: 3px dotted black;
+}
+
+.player-score {
+    font-size: 130%;
+    text-align: right;
+    flex-grow: initial;
+    padding: 10px;
+    width: auto;
+}
+
+.drawingPlayer {
+    border: 3px solid red !important;
+}
+
+.correctGuessPlayer {
+    background-color: lightgreen;
+}
+
+#guessWordField {
+    padding: 0;
+    margin: 10px;
+    color: black;
+    width: fit-content;
+    font-size: 150%;
+}
+
+#topBar {
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    margin: auto;
+    top: 140px;
+    left: 40px;
+    width: 1350px;
+    height: 50px;
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: lightblue;
+}
+
+#timerIcon {
+    position: absolute;
+    top: 4px;
+    left: 1200px;
+}
+
+#timer {
+    margin: 10px;
+    text-align: right;
+    flex-grow: initial;
+    padding-right: 20px;
+    padding-left: 0px;
+    font-size: 130%;
+}
+
+#bottomBar {
+    position: absolute;
+    margin: auto;
+    bottom: 120px;
+    left: 350px;
+    width: 780px;
+    height: 50px;
+    border: 1px solid black;
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto auto auto auto auto;
+    gap: 10px;
+    background-color: lightblue;
+    padding: 10px;
+}
+
+#bottomBar>button {
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    font-size: 180%;
+
+}

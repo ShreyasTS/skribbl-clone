@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="/socket.io/socket.io.js"></script>
+    <title>Skribbl</title>
+
+
+</head>
+
+
+<body>
+    <div class="overallHolder">
+
+
+        <div id="player-container"></div>
+
+
+        <div id="chat-container" class="chat-container"></div>
+        <div class="chatInput">
+            <form id="chat-form" onsubmit="updateSendChat()">
+                <input id="chatField" disabled type="text" placeholder="Guess" maxlength="50" autocomplete="off">
+                <button id="sendMsgBtn" disabled type="button" onclick="updateSendChat()">Send</button>
+                <p id="wordcounter"></p>
+
+            </form>
+        </div>
+
+
+        <div>
+        </div>
+
+        <div id="topBar">
+            <p id="guessWordField">WORD: </p>
+            <img id="timerIcon" width="45px" height="45px" src="/images/timer.png">
+            <p id="timer"> 0 </p>
+        </div>
+
+        <div id="bottomBar">
+            <button style="background-color: #FF0000; border-radius: 10px; " value="#FF0000"
+                onclick="setColor('#FF0000')"></button>
+            <button style="background-color: #4ae000;border-radius: 10px;" value="#4ae000"
+                onclick="setColor('#4ae000')"></button>
+            <button style="background-color: #0041c4;border-radius: 10px;" value="#0041c4"
+                onclick="setColor('#0041c4')"></button>
+            <button style="background-color: #fbd420;border-radius: 10px;" value="#fbd420"
+                onclick="setColor('#fbd420')"></button>
+            <button style="background-color: #fb5819;border-radius: 10px;" value="#fb5819"
+                onclick="setColor('#fb5819')"></button>
+            <button style="background-color: #bc19fb;border-radius: 10px;" value="#bc19fb"
+                onclick="setColor('#bc19fb')"></button>
+            <button style="background-color: #904e0c;border-radius: 10px;" value="#904e0c"
+                onclick="setColor('#904e0c')"></button>
+            <button style="background-color: #000000;border-radius: 10px;" value="#000000"
+                onclick="setColor('#000000')"></button>
+            <button style="background-color: #ffff;border-radius: 10px;" value="#ffff "
+                onclick="setColor('#ffff')"></button>
+            <!-- <button style="background-color: #ffff;" value="#ffff " onclick="eraser()"><img width="40px" height="40px" src="\images\eraser.png"></button> -->
+            <button style="border-radius: 50%;" onclick="clearCanvas()">🗑️</button>
+
+
+        </div>
+
+        <div class="voting">
+            <button onclick="voteUp();document.querySelector('.voting').innerHTML='';"><img id="thumbsUp"
+                    src="images/thumbsUp.gif"></button>
+            <button onclick="voteDown();document.querySelector('.voting').innerHTML='';"><img id="thumbsDown"
+                    src="images/thumbsDown.gif"></button>
+        </div>
+
+    </div>
+    <canvas id="canvas" width="800" height="600"
+    style="background-color: white;border:1px solid #000000; border-radius: 5px;"></canvas>
+
+
+    <button style="position: absolute; z-index: 6; border: 0px;background-color: transparent;"
+        onclick="audioToggle()"><img width="60px" id="audioControl" src="images/audioOn.gif"></button>
+
+    <br>
+
+    <div id="login-container"></div>
+
+    <script src="newjs.js"></script>
+
+
+</body>
+
+</html>
