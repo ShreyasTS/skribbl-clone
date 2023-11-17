@@ -44,6 +44,14 @@ Use `//admin {admin-password} {command} {player-name}*(optional) {value}*(option
 - **`setchoosetime`** Example: `//admin {admin-password} setchoosetime {value *in seconds}` Sets the time given to choose a word.
 - **`restart`** Example: `//admin {admin-password} restart ` Restarts the game for all players.
 
+
+------------
+###  Screenshots:
+<img src="screenshots/Main_screen.png" style="width:800px">
+<img src="screenshots/chooseWord.png" style="width:800px">
+<img src="screenshots/drawing.png" style="width:800px">
+
+
 ------------
 ###  Contributions:
 If you are interested in this project, make sure to add it to your favorites or give a ⭐ to get the latest updates.
